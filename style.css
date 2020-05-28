@@ -1,0 +1,123 @@
+body {
+	width: 650px;
+	margin-left: 50px;
+	background-image: url(http://coding.imweb.io/img/project/blog/bg.jpg)  ;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-attachment: fixed;/*背景图片固定*/
+	background-color: white;/*网页整体更自然*/
+}
+.page-detail .page-tt {
+	font-size: 36px;
+	line-height: 2;
+	margin: 30px 0;
+	color: #188eee;
+}
+.page-detail .article h2 {
+	font-size: 24px;
+	line-height: 2;
+	margin: 20px 0;
+	
+	background: linear-gradient(to right, #188eee 4em,  #ccc 4em);/*设置下划线渐变*/
+	background-position: bottom;/*文字加下划线，把背景位置设为底部*/
+	background-repeat: no-repeat;
+	background-size: 100% 5%; /*背景宽高*/
+}
+
+.page-detail .article ol {
+	counter-reset: section;
+	list-style-type: none;
+}
+.page-detail .article ol li::before {
+	font-family: monospace;
+	color: #999;
+	margin-right: 10px;
+	counter-increment: section;
+	content: counter(section,decimal-leading-zero)"/";/*decimal-leading-zero 十进制数，不足两位的补齐前导0*/
+}
+.page-detail .article p {
+	font-size: 16px;
+	line-height: 1.8;
+	text-indent: 2em;
+	margin: 10px 0;
+	color: #333;
+}
+.page-detail .article img {
+
+	border: 1px solid #999;
+	padding: 5px;
+	margin: 10px 0;
+}
+.page-detail .article .ps {
+	color: #999;
+	border-bottom: 5px solid #188eee;
+	padding-bottom: 8px;
+}
+.page-detail .article a:hover {
+ 	color: #188eee;
+}
+.section-comment {
+	margin-top: 50px;
+	border-top: 3px;
+	padding-top: 30px;
+}
+.section-comment .f-textarea {
+	height: 100px;
+	border-color: #dbdbdb;
+	border-radius: 5px;
+	padding: 5px;
+	width: 100%;
+}
+.section-comment .f-textarea:hover {
+	border-color: #ccc;
+	box-shadow: 2px 2px  5px rgba(0,0,0,0.2);/*编辑区的边框阴影*/
+}
+.section-comment .f-btn {
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.section-comment .f-btn:hover {
+	background-color: #147de2;
+	color: white;
+	border-radius: 5px;
+}
+.section-comment .comment-list .comment-item {
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	margin: 10px 0 ;
+
+}
+.section-comment .comment-list .comment-item:hover{
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);/*评论区边框阴影*/
+}
+.section-comment .comment-list .comment-item .comment-bd {
+	font-size: 14px;
+	padding: 5px
+}
+.section-comment .comment-list .comment-item:not(:.comment-bd ){
+	font-size: 12px;
+	padding: 5px;
+}
+.section-comment .comment-list .comment-item .item-time{
+	color: #666;
+	margin-right: 10px;
+}
+ .ft-oper:hover {
+	color:#147de2;
+	cursor: pointer;
+}
+.section-comment .comment-list .comment-item a{
+	text-decoration: none;
+}
+.item-user:hover{
+	color:#147de2;
+	cursor: pointer;
+}
+.section-comment .comment-list .comment-item .comment-ft {
+ 	text-align: right;
+
+}
+.ft-oper{
+	padding: 0 10px;
+}
