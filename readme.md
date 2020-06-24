@@ -1,4 +1,4 @@
-https://zhenglin333.github.io/demo/index.html
+https://zhenglin333.github.io/demo/blog.html
 # 博客
 
 ## 项目概述
